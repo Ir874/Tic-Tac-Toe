@@ -2,16 +2,19 @@
 import pygame
 import sys
 
-# Window parameters
-screen = pygame.display.set_mode((800,800))
-pygame.display.set_caption('Tic Tac Toe')
-
 # Define colors
 white = (255,255,255)
 black = (0,0,0)
 blue = (0,200,50)
 
+# Window parameters
+screen = pygame.display.set_mode((800,800))
+pygame.display.set_caption('Tic Tac Toe')
+screen.fill(white)
+
 # Define borders and sprites
+
+
 
 # Set FPS rate
 clock = pygame.time.Clock()
@@ -24,5 +27,11 @@ while running == True:
             pygame.quit()
             running == False
             sys.exit()
+
+    
+    
+    clock.tick(60)
+    pygame.display.flip()
+        
 
 
